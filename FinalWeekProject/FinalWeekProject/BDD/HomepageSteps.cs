@@ -8,26 +8,26 @@ namespace FinalWeekProject
     [Binding]
     public class HomepageSteps
     {
-        public Website Website { get; } = new Website ("chrome");
+        public Website Website { get; } = new Website("chrome");
 
         [Given(@"I am on the homepage")]
         public void GivenIAmOnTheHomepage()
         {
             Website.Homepage.VisitHomePage();
         }
-        
+
         [When(@"I enter a (.*) into the search bar")]
         public void WhenIEnterAIntoTheSearchBar(string bookName)
         {
             Website.Homepage.SearchBook(bookName);
         }
-        
+
         [When(@"click on the searched book's name")]
         public void WhenClickOnTheSearchedBookSName()
         {
             Website.Homepage.ClickOnSearchedBook();
         }
-        
+
         [Then(@"I should see the '(.*)' of the book")]
         public void ThenIShouldSeeTheOfTheBook(string p0)
         {

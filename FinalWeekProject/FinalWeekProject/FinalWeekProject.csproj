@@ -139,6 +139,7 @@
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
     <Compile Include="BDD\HomepageSteps.cs" />
+    <Compile Include="BDD\LoginSteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\pages\Homepage.cs" />
     <Compile Include="lib\pages\LoginPage.cs" />
@@ -151,6 +152,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="BDD\Homepage.feature" />
+    <None Include="BDD\Login.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

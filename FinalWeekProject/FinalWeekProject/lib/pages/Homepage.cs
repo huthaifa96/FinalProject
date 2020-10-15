@@ -20,7 +20,7 @@ namespace FinalWeekProject
         private IWebElement _descriptionField => _driver.FindElement(By.Id("description-label"));
         private IWebElement _profileButton => _driver.FindElement(By.CssSelector(".show #item-3 > .text"));
         private IWebElement _profileNotLoggedIn => _driver.FindElement(By.Id("notLoggin-label"));
-        private IWebElement _welcomeLoginAlert => _driver.FindElement(By.Id("userForm")); 
+        private IWebElement _welcomeLoginAlert => _driver.FindElement(By.Id("userForm"));
 
         public Homepage(IWebDriver driver)
         {
@@ -52,7 +52,7 @@ namespace FinalWeekProject
         public void ClickOnProfile()
         {
             _profileButton.Click();
-        }        
+        }
         public string ProfileNotLoggedIn()
         {
             return _profileNotLoggedIn.Text;

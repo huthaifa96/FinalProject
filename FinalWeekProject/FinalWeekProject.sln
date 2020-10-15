@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalWeekProject", "FinalWeekProject\FinalWeekProject.csproj", "{AF4EA769-656E-41B6-8EC2-F2A30DBBC9CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalWeekProjectAPI", "FinalWeekProjectAPI\FinalWeekProjectAPI.csproj", "{68B9663C-C5F2-433E-A504-DF4CEEC62980}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AF4EA769-656E-41B6-8EC2-F2A30DBBC9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF4EA769-656E-41B6-8EC2-F2A30DBBC9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF4EA769-656E-41B6-8EC2-F2A30DBBC9CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B9663C-C5F2-433E-A504-DF4CEEC62980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B9663C-C5F2-433E-A504-DF4CEEC62980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B9663C-C5F2-433E-A504-DF4CEEC62980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B9663C-C5F2-433E-A504-DF4CEEC62980}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

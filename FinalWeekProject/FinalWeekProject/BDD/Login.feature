@@ -4,8 +4,7 @@
 	I want to be told the sum of two numbers
 
 @mytag
-Scenario: Add two numbers
-	Given the first number is 50
-	And the second number is 70
-	When the two numbers are added
-	Then the result should be 120
+Scenario: Creating new user
+	Given I am on the login page
+	When I click new user
+	Then I should see 'Register to Book Store'
