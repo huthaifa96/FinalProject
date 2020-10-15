@@ -11,7 +11,7 @@ namespace FinalWeekProjectAPI
         [Test]
         public void CheckStatusIs200()
         {
-            Assert.That(_Service.BooksLatestDTO.Books.success);
+            Assert.That(_Service.BooksLatestDTO.Books.);
         }
 
     }

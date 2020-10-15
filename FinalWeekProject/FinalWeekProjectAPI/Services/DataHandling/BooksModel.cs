@@ -10,7 +10,7 @@ namespace FinalWeekProjectAPI
     public class Rootobject
     {
         public Book[] books { get; set; }
-        public bool success { get; set; }
+        
     }
 
     public class Book
