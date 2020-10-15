@@ -17,15 +17,16 @@ namespace FinalWeekProjectAPI
         public CallManager()
         {
             _client = new RestClient(ConfigReader.BaseUrl);
-            GetResults();
         }
 
         public string GetResults()
         {
-            var request = new RestRequest();
+            var request = new RestRequest(ConfigReader.v1Books);
             var response = _client.Execute(request, Method.GET);
             return response.Content;
         }
+
+
 
 
     }

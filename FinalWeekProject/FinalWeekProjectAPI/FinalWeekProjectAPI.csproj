@@ -81,7 +81,7 @@
     <Compile Include="Services\DataHandling\BooksModel.cs" />
     <Compile Include="Services\HTTPManager\CallManager.cs" />
     <Compile Include="Services\Service.cs" />
-    <Compile Include="Tests\UnitTest1.cs" />
+    <Compile Include="Tests\APITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

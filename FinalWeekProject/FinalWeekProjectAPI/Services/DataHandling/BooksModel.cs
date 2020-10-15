@@ -9,8 +9,9 @@ namespace FinalWeekProjectAPI
 
     public class Rootobject
     {
-        public Book[] books { get; set; }
+        public Book[] Books { get; set; }
         
+
     }
 
     public class Book

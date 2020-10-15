@@ -24,9 +24,9 @@ namespace FinalWeekProjectAPI
 
         public void GetResults()
         {
-            BookSelected = CallManager.GetResults();
-            BooksLatestDTO.DeserializeBooks(BookSelected);
-            BookResponseContent = JsonConvert.DeserializeObject<JObject>(BookSelected);
+            BookSelected = CallManager.GetResults(); // This gets books and puts it as one long string
+            BooksLatestDTO.DeserializeBooks(BookSelected); // this stores the data
+            BookResponseContent = JsonConvert.DeserializeObject<JObject>(BookSelected); // storing it as a JObject
         }
 
     }
