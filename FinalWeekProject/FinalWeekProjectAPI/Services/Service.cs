@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 
 namespace FinalWeekProjectAPI
 {
-    class Service
+    public class Service
     {
         public RestClient client { get; set; } // A RESTSharp object that handles communication with the API and this is where we make our calls
         public CallManager CallManager { get; set; } = new CallManager();
         public BooksLatestDTO BooksLatestDTO { get; set; } = new BooksLatestDTO();
         public JObject BookResponseContent { get; set; } // Stores our responses
         public string BookSelected { get; set; } // The book that is selected
+        
                 
         public Service()
         {
@@ -28,6 +29,8 @@ namespace FinalWeekProjectAPI
             BooksLatestDTO.DeserializeBooks(BookSelected); // this stores the data
             BookResponseContent = JsonConvert.DeserializeObject<JObject>(BookSelected); // storing it as a JObject
         }
+
+        
 
     }
 }
