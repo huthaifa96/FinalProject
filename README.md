@@ -32,6 +32,12 @@ The aim of this sprint was to complete the uncompleted tasks. In sprint two, I d
 #### Sprint 3 Retrospective
 When carrying out the tests for the different API requests, the GET requests worked fine but I had issues with the POST requests. A "user ID not authorised" error popped up so I had to stick to the GET request test.
 
-#### Project Review
+### Project Review
 
-This project w 
+The project requirements was to create automated web tests for the book store on demoqa.com and to try and create API request tests. The automated web tests run smoothly and basic functionality of the website was tested, so in this section this could be considered a success. For the API tests, a GET request was tested and this also passed. However, when trying to do a POST request, an error saying that "user ID is not authorized" came up and this was the reason why no POST request test could be conducted. Also, working in the SCRUM framework helped me stay organised despite the setbacks and this can be seen from the recorded documentation in the project board.
+
+### Project Retrospective
+
+A lot of lessons can be taken from this project. Firstly, starting with thorough research at the beginning of the project would help productivity later on in the project. On the subject of productivity, each task should've been timeboxed because this would help in planning future sprints as you'd know roughly how long each task will realistically take. This would have helped me as I felt that I ran out of time near the end to carry out more tests.
+
+I also tried planning out all the API tests when I don't think I had a solid understanding of how API's operated. So, I lost some time because of this as I realised some of the planned tests weren't possible or were too complicated for me to do.
