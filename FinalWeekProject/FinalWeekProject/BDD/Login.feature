@@ -1,7 +1,7 @@
 ﻿Feature: Login
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	In order to keep a record of my purchased books
+	As a user
+	I want to have a profile which shows me my purchases
 
 @mytag
 Scenario: Navigating to the new user page

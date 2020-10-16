@@ -9,17 +9,15 @@ namespace FinalWeekProject
 {
     public class SeleniumDriverConfig
     {
-        //property for the driver for later use
+
         public IWebDriver Driver { get; set; }
-        //constructor that calls a method to set yp the driver depending on the browser we want
+
         public SeleniumDriverConfig(string driver, int pageLoadInSecs, int implicitWaitInSecs)
         {
             DriverSetUp(driver, pageLoadInSecs, implicitWaitInSecs);
         }
 
-        //Driver instatantiation manager. This method will trigger another method that sets
-        // the driver configuration depending on the browser type.
-        //Note: if none is supplied, an exception will be thrown
+       
         public void DriverSetUp(string driver, int pageLoadInSecs, int implicitWaitInSecs)
         {
             if (driver.ToLower() == "chrome")

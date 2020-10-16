@@ -1,7 +1,7 @@
 ﻿Feature: Homepage
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	In order to navigate around the website
+	As a user
+	I want see a homepage which gives me an option to click on the different sections
 
 @homepage
 Scenario: Book description
