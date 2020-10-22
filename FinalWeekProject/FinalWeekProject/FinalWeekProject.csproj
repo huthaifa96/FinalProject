@@ -138,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
+    <Compile Include="BDD\BooksSteps.cs" />
     <Compile Include="BDD\HomepageSteps.cs" />
     <Compile Include="BDD\LoginSteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
@@ -151,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="BDD\Books.feature" />
     <None Include="BDD\Homepage.feature" />
     <None Include="BDD\Login.feature" />
     <None Include="packages.config" />

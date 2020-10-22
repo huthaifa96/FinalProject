@@ -8,12 +8,10 @@ Scenario: Book description
 	Given I am on the homepage
 	When I enter a <book name> into the search bar
 	And click on the searched book's name
-	Then I should see the 'Description' of the book
-Examples:
-| book name           |
-| Git Pocket Guide    |
-| Speaking JavaScript |
-| You Don't Know JS   |
+	Then I should see the right description of the book
+	Examples:
+	| book name           |
+	| Git Pocket Guide    |
 
 @homepage
 Scenario: Profile without logging in

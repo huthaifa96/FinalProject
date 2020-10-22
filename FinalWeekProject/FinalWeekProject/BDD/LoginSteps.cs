@@ -1,8 +1,10 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
+using System.Threading;
 using TechTalk.SpecFlow;
-using NUnit.Framework;
+using TechTalk.SpecFlow.Assist;
 
-namespace FinalWeekProject.BDD
+namespace FinalWeekProject
 {
     [Binding]
     public class LoginSteps
@@ -34,20 +36,31 @@ namespace FinalWeekProject.BDD
             Website.LoginPage.NewUser();
         }
 
-        [Given(@"I have filled in the relevant fields")]
-        public void GivenIHaveFilledInTheRelevantFields(string firstName, string lastName, string username, string password)
+        [Given(@"I have filled in the prompted fields")]
+        public void GivenIHaveFilledInThePromptedFields(Table table)
         {
-            firstName = "Sparta";
-            lastName = "Global";
-            username = "SpartaGlobalTest";
-            password = "Test123$";
-
-            Website.LoginPage.InputFirstName(firstName);
-            Website.LoginPage.InputLastName(lastName);
-            Website.LoginPage.InputUsername(username);
-            Website.LoginPage.InputPassword(password);
-
+            var fields = table.CreateInstance<Message>();
+            Website.LoginPage.InputFirstName(fields.FirstName);
+            Website.LoginPage.InputLastName(fields.LastName);
+            Website.LoginPage.InputUsername(fields.UserName);
+            Website.LoginPage.InputPassword(fields.Password);
         }
+
+
+        //[Given(@"I have filled in the relevant fields")]
+        //public void GivenIHaveFilledInTheRelevantFields(string firstName, string lastName, string username, string password)
+        //{
+        //    firstName = "Sparta";
+        //    lastName = "Global";
+        //    username = "SpartaGlobalTest";
+        //    password = "Test123$";
+
+        //    Website.LoginPage.InputFirstName(firstName);
+        //    Website.LoginPage.InputLastName(lastName);
+        //    Website.LoginPage.InputUsername(username);
+        //    Website.LoginPage.InputPassword(password);
+
+        //}
 
         [Given(@"clicked the I'm not a robot box")]
         public void GivenClickedTheIMNotARobotBox()
@@ -98,5 +111,13 @@ namespace FinalWeekProject.BDD
             Website.SeleniumDriver.Quit();
             Website.SeleniumDriver.Dispose();
         }
+    }
+
+    class Message
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
     }
 }

@@ -12,7 +12,9 @@ Scenario: Navigating to the new user page
 @mytag
 Scenario: Creating new user
 	Given that I am on the create new user page
-	And I have filled in the relevant fields
+	And I have filled in the prompted fields
+	| FirstName | LastName | UserName     | Password |
+	| Sparta    | Global   | SpartaGlobal23 | Test123$ |
 	And clicked the I'm not a robot box
 	When I click register
 	Then I should have created a new user
@@ -29,3 +31,4 @@ Examples:
 |four     |
 |1234     |
 |Test     |
+

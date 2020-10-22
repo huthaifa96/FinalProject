@@ -17,10 +17,13 @@ namespace FinalWeekProject
         private IWebElement _searchBar => _driver.FindElement(By.Id("searchBox"));
         private IWebElement _loginButton => _driver.FindElement(By.Id("login"));
         private IWebElement _searchedBook => _driver.FindElement(By.XPath("//span/a")); // Using XPath not ideal but LinkText is too specific for that book
-        private IWebElement _descriptionField => _driver.FindElement(By.Id("description-label"));
+        private IWebElement _descriptionField => _driver.FindElement(By.CssSelector("#description-wrapper #userName-value"));
         private IWebElement _profileButton => _driver.FindElement(By.CssSelector(".show #item-3 > .text"));
         private IWebElement _profileNotLoggedIn => _driver.FindElement(By.Id("notLoggin-label"));
         private IWebElement _welcomeLoginAlert => _driver.FindElement(By.Id("userForm"));
+        private IWebElement _bookStoreButton => _driver.FindElement(By.CssSelector(".show #item-2"));
+        private IWebElement _addToCollectionButton => _driver.FindElement(By.Id("addNewRecordButton"));
+        private IWebElement _userNameCheck=> _driver.FindElement(By.Id("userName-value"));
 
         public Homepage(IWebDriver driver)
         {
@@ -65,6 +68,19 @@ namespace FinalWeekProject
         public string LoginWelcome()
         {
             return _welcomeLoginAlert.Text;
+        }
+        public void ClickOnBookStore()
+        {
+            _bookStoreButton.Click();
+        }
+
+        public void AddToCollectionButton()
+        {
+            _addToCollectionButton.Click();
+        }
+        public string UsernameCheck()
+        {
+            return _userNameCheck.Text;
         }
 
     }

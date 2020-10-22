@@ -24,7 +24,7 @@ namespace FinalWeekProject
         private IWebElement _lastNameField => _driver.FindElement(By.Id("lastname"));
         private IWebElement _usernameField => _driver.FindElement(By.Id("userName"));
         private IWebElement _passwordField => _driver.FindElement(By.Id("password"));
-        private IWebElement _clickImNotRobot => _driver.FindElement(By.CssSelector(".recaptcha-checkbox-border"));
+        private IWebElement _clickImNotRobot => _driver.FindElement(By.Id("recaptcha-anchor"));
         private IWebElement _clickRegister => _driver.FindElement(By.Id("register"));
         private IWebElement _profileHeading => _driver.FindElement(By.ClassName("main-header"));
 

@@ -35,8 +35,8 @@ namespace FinalWeekProject.BDD
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "Homepage", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
-                    "f two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "Homepage", "\tIn order to navigate around the website\r\n\tAs a user\r\n\tI want see a homepage whic" +
+                    "h gives me an option to click on the different sections", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -78,8 +78,6 @@ namespace FinalWeekProject.BDD
         [NUnit.Framework.DescriptionAttribute("Book description")]
         [NUnit.Framework.CategoryAttribute("homepage")]
         [NUnit.Framework.TestCaseAttribute("Git Pocket Guide", null)]
-        [NUnit.Framework.TestCaseAttribute("Speaking JavaScript", null)]
-        [NUnit.Framework.TestCaseAttribute("You Don\'t Know JS", null)]
         public virtual void BookDescription(string bookName, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -122,7 +120,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("click on the searched book\'s name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 11
- testRunner.Then("I should see the \'Description\' of the book", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should see the right description of the book", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -137,7 +135,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "homepage"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Profile without logging in", null, tagsOfScenario, argumentsOfScenario);
-#line 19
+#line 17
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -157,13 +155,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 20
+#line 18
  testRunner.Given("I am on the homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 21
+#line 19
  testRunner.When("I click Profile without logging in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 22
+#line 20
  testRunner.Then("I should see the \'Currently you are not logged into the Book Store\' message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -179,7 +177,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "homepage"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login page", null, tagsOfScenario, argumentsOfScenario);
-#line 25
+#line 23
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -199,13 +197,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 26
+#line 24
  testRunner.Given("I am on the homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 27
+#line 25
  testRunner.When("I click Login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 28
+#line 26
  testRunner.Then("The \'Welcome, Login in Book Store\' message should be seen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

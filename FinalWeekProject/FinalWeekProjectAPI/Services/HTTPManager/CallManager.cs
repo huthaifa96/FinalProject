@@ -13,8 +13,7 @@ namespace FinalWeekProjectAPI
     {
         //The restsharp object which handles the call
         readonly IRestClient _client;
-        public JObject Json_SessionID { get; set; }
-        public JObject Json_Features { get; set; }
+        
         public CallManager()
         {
             _client = new RestClient(ConfigReader.BaseUrl);
